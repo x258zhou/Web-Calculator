@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="Calculator.css"/>
+		<script src="Calculator.js" type="text/javascript" charset="utf-8"></script>
+		<!--
+        	Author：Joe Zhou
+        	Date：2016-06-28
+        	Discription：This is a calculator with basic functions.
+        -->
+		<!--
+			This project was created using HTML, CSS and JavaScript, and it Includes basic operations.
+			It consists of div tags in different classes and ids. Onclick, onmouseup and onmousedown methods are used.
+			The div tags are used instead of buttons. Div blocks are easy to be decorated. Onclick method realizes functions of each button.
+			Onmousedown and onmouseup methods are used to decorate the div buttons. They changed CSS codes so they looks differently when pressing down.
+		-->
+	</head>
+	<body>
+		<div class="header">
+			Calculator
+		</div>
+		<div id="tot">
+			<div id="result"></div>
+			<div id="tot1">
+				<div class="tot1_">
+					<div class="div_buttons num" onclick="num('7')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">7</div>
+					<div class="div_buttons num" onclick="num('8')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">8</div>
+					<div class="div_buttons num" onclick="num('9')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">9</div>
+					<div class="div_buttons sym" onclick="sym('+')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">+</div>
+					<div class="div_buttons func" onclick="deletenum()" onmousedown="style.color='cornflowerblue';style.background='white'" onmouseup="style.color='white';style.background='cornflowerblue'">←</div>
+				</div>
+				<div class="tot1_">
+					<div class="div_buttons num" onclick="num('4')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">4</div>
+					<div class="div_buttons num" onclick="num('5')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">5</div>
+					<div class="div_buttons num" onclick="num('6')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">6</div>
+					<div class="div_buttons sym" onclick="sym('-')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">-</div>
+					<div class="div_buttons sym" onclick="bracket_left()" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">(</div>
+				</div>
+				<div class="tot1_">
+					<div class="div_buttons num" onclick="num('1')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">1</div>
+					<div class="div_buttons num" onclick="num('2')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">2</div>
+					<div class="div_buttons num" onclick="num('3')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">3</div>
+					<div class="div_buttons sym" onclick="sym('*')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">×</div>
+					<div class="div_buttons sym" onclick="sym(')')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">)</div>
+				</div>
+				<div class="tot1_">
+					<div class="div_buttons sym" onclick="sym('.')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">.</div>
+					<div class="div_buttons num" onclick="num('0')" onmousedown="style.color='darkorange';style.background='white'" onmouseup="style.color='white';style.background='darkorange'">0</div>
+					<div class="div_buttons sym" onclick="equals()" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">=</div>
+					<div class="div_buttons sym" onclick="sym('/')" onmousedown="style.color='crimson';style.background='white'" onmouseup="style.color='white';style.background='crimson'">÷</div>
+					<div class="div_buttons func" onclick="default_set()" onmousedown="style.color='cornflowerblue';style.background='white'" onmouseup="style.color='white';style.background='cornflowerblue'">C</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
