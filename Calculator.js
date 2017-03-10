@@ -11,7 +11,7 @@ Basicly the result was given by the eval() function. A try-catch structure was u
 var temp1 = "";
 var temp2 = false;
 var errtxt1 = "Empty equation :)";
-var errtxt2 = "Oops! There there might be some errors in your equation. Keep this equation? :)";
+var errtxt2 = "Oops! There might be some errors in your equation. Keep this equation? :)";
 var errtxt3 = "Cannot divide by 0. Keep this equation? :)";
 
 function default_set()
